@@ -1,0 +1,9 @@
+./*
+DEPENDENCIES/seattlelib_v2/math.r2py
+DEPENDENCIES/sensorlib/
+
+getsensor
+unicode_scrubber
+sensorlib
+
+dylink

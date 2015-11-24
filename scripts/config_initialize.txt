@@ -1,0 +1,4 @@
+#https://github.com/SensibilityTestbed/sensevis.git ../DEPENDENCIES/sensevis
+https://github.com/SensibilityTestbed/sensorlib.git ../DEPENDENCIES/sensorlib
+https://github.com/SensibilityTestbed/seattlelib_v2 ../DEPENDENCIES/seattlelib_v2
+
