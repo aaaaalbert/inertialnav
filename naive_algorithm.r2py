@@ -6,7 +6,7 @@
 <Purpose>
   This is a script for estimating the position of a person walking
   between two known locations. Sensor data from the GPS, accelerometer,
-  gyroscope, and magnetometer are backhauled to sensevis.poly.edu while 
+  gyroscope, and magnetometer are gathered while 
   the acceleration and angular velocity of the device are integrated to
   estimate its position.
 
@@ -18,7 +18,6 @@
 
 
 getsensor = dy_import_module('getsensor.r2py')
-sensevislib = dy_import_module('sensevislib.r2py')
 dy_import_module_symbols('matrixmath.r2py')
 dy_import_module_symbols('math.r2py')
 
