@@ -53,7 +53,7 @@ while num_samples < 100:
 
 # set gravity as the avg, and negate for later subtraction
 minus_phone_gravity = matrix_transpose(matrix_scale(phone_gravity, -1.0 / num_samples))
-log('Gravity: ', gravity, '\n')
+log('Gravity: ', minus_phone_gravity, '\n')
 
 
 
@@ -63,10 +63,6 @@ while 'time' not in getsensor.get_sensors():
   sleep(0.1)
 
 log('Starting...')
-# Collect sensor data, but process it in another
-# thread so we don't slow down the polling rate. 
-while True:
-  createthread(process(getsensor.get_sensors()))
   
 
 # processes sensor data to estimate position
@@ -127,3 +123,10 @@ def process(sensordata):
   return func
 
 # -*- mode: python;-*-
+
+
+# Collect sensor data, but process it in another
+# thread so we don't slow down the polling rate. 
+while True:
+  createthread(process(getsensor.get_sensors()))
+
